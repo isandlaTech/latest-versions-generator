@@ -1,2 +1,2 @@
 # latest-versions-generator
-Generate latest versions (json files) of Cohorte bundles
+A python script that generates a JSON files of latest versions of Cohorte modules
