@@ -9,7 +9,7 @@ It contains Urls of the last snapshots.
 
 ..
 
-    Copyright 2015 isandlaTech
+    Copyright 2015-2016 Cohorte Technologies (e.x. isandlaTech)
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -22,10 +22,15 @@ It contains Urls of the last snapshots.
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+:updates:
+    MOD_BD_20160920
+        - Changing snapshot and release maven repositories
+        - Updating version from 0.0.1 to 0.1.0    
 """
 
 # Module version
-__version_info__ = (0, 0, 1)
+__version_info__ = (0, 1, 0)
 __version__ = ".".join(str(x) for x in __version_info__)
 
 # Documentation strings format
@@ -42,8 +47,8 @@ try:
 except ImportError:
     import urllib.request as urllib2
 
-DEV_REPO_URL = "http://repo.isandlatech.com/maven/snapshots/org/cohorte/platforms/cohorte"
-RELEASE_REPO_URL = "http://repo.isandlatech.com/maven/releases/org/cohorte/platforms/cohorte"
+DEV_REPO_URL = "http://forge.cohorte-technologies.com:6080/repository/cohorte-snapshots/org/cohorte/platforms/cohorte"
+RELEASE_REPO_URL = "http://forge.cohorte-technologies.com:6080/repository/cohorte-releases/org/cohorte/platforms/cohorte"
 MAVEN_FILE = "maven-metadata.xml"
 
 def get_file_path(url_path, json_data, dist_name, what):       
